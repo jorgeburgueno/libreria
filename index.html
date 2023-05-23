@@ -10,9 +10,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-
+    
 </head>
 <body>
+    
     <div class="container">
         <div class="header">
           <div class="search">
@@ -92,12 +93,28 @@
         <div class="content">
             <div class="proyectos">
                <h3 class="titulo-contenido">Libreria</h3>
-               
+               <div class="libros">
+                 <button class="nuevo-libro-boton">Nuevo</button>
+                 <form class="forma-nuevo" style="display:none;">
+                    <label for="titulo">Titulo</label>
+                    <input type="text" class="titulo">
+                    <label for="autor">Autor</label>
+                    <input type="text" class="autor">
+                    <label for="paginas">Paginas</label>
+                    <input type="text" class="paginas">
+                    <label for="read">Leido</label>
+                    <input type="checkbox" class="leido">
+                    <input type="submit" value="Add Book">                
+                 </form>
+                 <div class="libreria"></div>
+
                </div>
+               
             </div>
             
         
         </div>
     </div>
+<script src="script.js"></script>
 </body>
 </html>
